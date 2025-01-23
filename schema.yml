@@ -26249,6 +26249,11 @@ paths:
         schema:
           type: boolean
       - in: query
+        name: pbm_uuid
+        schema:
+          type: string
+          format: uuid
+      - in: query
         name: realm
         schema:
           type: string
@@ -26624,6 +26629,11 @@ paths:
         name: password_login_update_internal_password
         schema:
           type: boolean
+      - in: query
+        name: pbm_uuid
+        schema:
+          type: string
+          format: uuid
       - in: query
         name: peer_certificate
         schema:
@@ -27054,6 +27064,11 @@ paths:
         schema:
           type: integer
       - in: query
+        name: pbm_uuid
+        schema:
+          type: string
+          format: uuid
+      - in: query
         name: policy_engine_mode
         schema:
           type: string
@@ -27422,6 +27437,11 @@ paths:
         description: Number of results to return per page.
         schema:
           type: integer
+      - in: query
+        name: pbm_uuid
+        schema:
+          type: string
+          format: uuid
       - in: query
         name: policy_engine_mode
         schema:
@@ -27826,6 +27846,11 @@ paths:
         schema:
           type: integer
       - in: query
+        name: pbm_uuid
+        schema:
+          type: string
+          format: uuid
+      - in: query
         name: policy_engine_mode
         schema:
           type: string
@@ -28188,6 +28213,11 @@ paths:
         description: Number of results to return per page.
         schema:
           type: integer
+      - in: query
+        name: pbm_uuid
+        schema:
+          type: string
+          format: uuid
       - name: search
         required: false
         in: query
