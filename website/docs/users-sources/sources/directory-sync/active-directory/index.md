@@ -70,7 +70,7 @@ To support the integration of authentik with Active Directory, you will need to 
     - **User object filter**: which objects should be considered users (e.g. `(objectClass=user)`). For Active Directory set it to `(&(objectClass=user)(!(objectClass=computer)))` to exclude Computer accounts.
     - **Group object filter**: which objects should be considered groups (e.g `(objectClass=group)`).
     - **Lookup using a member attribute**: acquire group membership from a User object attribute (`memberOf`) instead of a Group attribute (`member`).
-    - **Membership field**: ensure that this is set to `member` for Active Directory nested group lookups, unless flattening memberships is needed. Flattening can be achieved my setting this to `memberOf:1.2.840.113556.1.4.1941:` and enabling **Lookup using a member attribute**.
+    - **Membership field**: ensure that this is set to `member` for Active Directory nested group lookups, unless flattening memberships is needed. Flattening can be achieved by setting this to `memberOf:1.2.840.113556.1.4.1941:` and enabling **Lookup using a member attribute**.
     - **Membership reference attribute**: ensure that this is set to `distinguishedName`.
     - **Object uniqueness field**: a user attribute that contains a unique identifier (e.g. `objectSid`).
 
